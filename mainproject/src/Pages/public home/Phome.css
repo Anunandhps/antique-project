@@ -1,0 +1,486 @@
+.pagebackground{
+    background-color:   #040720;
+    height: 4000px;
+
+
+}
+
+section{
+    padding: 70px 15%;
+}
+
+.home{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+  
+}
+
+
+.home-image img{
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+
+}
+
+.home-text h1{
+    color: coral;
+    font-size: xxx-large;
+
+}
+
+.home-text h2{
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+}
+.home-text{
+    position: relative;
+    bottom: 50px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: coral;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 400 ;
+
+}
+
+.btn:hover{
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+
+
+
+
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+.about-img img{
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.about-text span{
+    color: coral;
+    font-weight: 600;
+    font-size: large;
+
+}
+
+.about-text h2{
+    color: white;
+    font-size: xx-large;
+}
+.about-text p{
+    margin: 0.8rem 0  1.8rem;
+    line-height: 1.7;
+    color: aliceblue;
+
+}
+
+/* --------------------categories------------------------------- */
+
+.heading{
+    text-align: center
+}
+
+.heading span{
+    color: coral;
+    font-weight: 600;
+    font-size: large;
+    
+}
+
+.heading h2{
+    color: white;
+    font-size: xx-large;
+}
+
+
+
+
+
+
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(82, 60%, 28%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --body-color: hsl(0, 0%, 95%);
+  --container-color: hsl(0, 0%, 100%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: .813rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+/*=============== CARD ===============*/
+.cate-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 7.5rem;
+    align-items: center;
+   
+  }
+  
+  .card__container {
+    display: grid;
+    row-gap: 3.5rem;
+  }
+  
+  .card__article {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card__img {
+    width: 328px;
+    border-radius: 1.5rem;
+  }
+  
+  .card__data {
+    width: 280px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+  }
+  
+  .card__description {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+  }
+  
+  .card__title {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+  }
+  
+  .card__button {
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    color: var(--first-color);
+  }
+  
+  .card__button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Naming animations in hover */
+  .card__article:hover .card__data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+  
+  .card__article:hover {
+    animation: remove-overflow 2s forwards;
+  }
+  
+  .card__article:not(:hover) {
+    animation: show-overflow 2s forwards;
+  }
+  
+  .card__article:not(:hover) .card__data {
+    animation: remove-data 1s forwards;
+  }
+  
+  /* Card animation */
+  @keyframes show-data {
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(-7rem);
+    }
+  }
+  
+  @keyframes remove-overflow {
+    to {
+      overflow: initial;
+    }
+  }
+  
+  @keyframes remove-data {
+    0% {
+      transform: translateY(-7rem);
+    }
+    50% {
+      transform: translateY(-10rem);
+    }
+    100% {
+      transform: translateY(.5rem);
+    }
+  }
+  
+  @keyframes show-overflow {
+    0% {
+      overflow: initial;
+      pointer-events: none;
+    }
+    50% {
+      overflow: hidden;
+    }
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  @media screen and (max-width: 340px) {
+    .container {
+      margin-inline: 1rem;
+    }
+  
+    .card__data {
+      width: 250px;
+      padding: 1rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (min-width: 768px) {
+    .card__container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.5rem;
+    }
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1120px) {
+    .container {
+      height: 100vh;
+    }
+  
+    .card__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .card__img {
+      width: 348px;
+    }
+    .card__data {
+      width: 316px;
+      padding-inline: 2.5rem;
+    }
+  }
+
+
+
+  /* ------------------------------------------services--------------------------------------------- */
+
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto) );
+    grid-gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.s-box{
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.s-box img{
+    width: 150px;
+}
+
+.s-box h3{
+    margin: 4px 0  10px;
+    color: coral;
+    font-size: 1.2rem;
+}
+
+.s-box p{
+    line-height: 1.7;
+    color: white;
+}
+
+.cta{
+    background: antiquewhite;
+    padding: 70px 0;
+    text-align: center;
+    width: 66%;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.cta h2{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    padding: 10px 0;
+}
+.col{
+    width: 25%;
+}
+
+.col h4{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.col h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: coral;
+}
+.col ul li:not(last-child) {
+    margin-bottom: 15px;
+}
+.col ul li a{
+    color: darkgrey;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+    text-decoration: none;
+}
+.col ul li a:hover{
+    color: white;
+    transform: translateX(-12px);
+}
+
+.col .socials{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col .socials a{
+    height: 40px;
+    width: 40px;
+    background: coral;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+.col .socials a:hover{
+    transform: scale(1.2);
+    color: coral;
+    background: white;
+}
+
+
+@media (max-width: 1560px) {
+   header{
+    padding: 15px 40px;
+   }
+   :root {
+    --big-font:3.5rem;
+    --h2-font:2rem;
+   }
+}
+
+
+@media (max-width: 1140px) {
+  section{
+    padding: 50px 8%;
+  }
+  .col{
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media  (max-width: 720px){
+  header{
+    padding: 10px 16px;
+  }
+  .home{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-img{
+    order: 2;
+  }
+  .section{
+    padding: 100px 7%;
+  }
+  
+
+}
+
+@media (max-width: 575px) {
+  .col{
+    width: 100%;
+  }
+  .pagebackground{
+    background-color:   #040720;
+    height: 6700px;
+
+}
+
+
+}

@@ -1,0 +1,145 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.adminbody{
+  background: #272c4a;
+}
+.container{
+    display: flex;
+}
+.navi{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #ffffff;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  .logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+  }
+  .logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+  }
+  .navi .fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+  }
+  .a:hover{
+    background: #eee;
+  }
+  .logout{
+    position: relative;
+    top: 30px;
+  }
+
+
+  /* card section */
+
+  .col-div-3{
+    width: 25%;
+    float: right;
+    position: relative;
+    left: 40px;
+    top: 75px;
+  }
+
+  .box{
+    width: 85%;
+    height: 100px;
+    background-color: white;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .box p{
+    font-size: 35px;
+    color: #272c4a;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .box p span{
+    font-size: 20px;
+    font-weight: 400;     
+    color: #818181;
+
+  }
+  .box-icon{
+    font-size: 40px !important;
+    float: right;
+    margin-top: 35px !important;
+    color: #818181;
+    padding-right: 10px;
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .card {
+      flex: 1;
+    }
+
+    .box{
+      width: 190px;
+    }
+    .la{
+      position: relative;
+      top: 50px;
+
+    }
+    .li{
+      position: relative;
+      top: 100px;
+    }
+    .adminbody{
+      height: 1400px;
+      
+    }
+ 
+  }

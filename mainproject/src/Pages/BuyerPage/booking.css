@@ -1,0 +1,175 @@
+.cont{
+    width: 90%;
+
+}
+.fit{
+    object-fit: cover;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     /* gap: 10px; */
+   justify-content: space-around;
+}
+.felx{
+    /* margin-left: 15px; */
+    row-gap: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+ .bstat{
+    color: rgba(255, 0, 0, 0.699);
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+ }
+
+
+
+
+.payment-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #DFDBE5; */
+    /* background-image: url("https://wallpaperaccess.com/full/3063067.png"); */
+   
+}
+
+.payment-card {
+    width: 60rem;
+    margin: auto;
+    background: white;
+    position: center;
+    align-self: center;
+    top: 50rem;
+    border-radius: 1.5rem;
+    box-shadow: 4px 3px 20px #3535358c;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.card-left {
+    background: #030303d8;
+    width: 25rem;
+    /* display: inline-flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    color: white;
+}
+
+.product-image {
+    object-fit: cover;
+    width: 20em;
+    height: 20em;
+    border-radius: 20%;
+    border: 2px solid white;
+}
+
+.card-right {
+    background-color: #ffffff;
+    width: 35rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
+    /* display: flex;
+    justify-content: flex-start; */
+}
+
+
+p {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: .8rem 0;
+    
+}
+
+.input-box {
+    color: #030303;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+
+
+.checkout-button {
+    /* background: linear-gradient(135deg, #753370 0%, #298096 100%); */
+    background-color: #030303;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width: 100%;
+    letter-spacing: .11rem;
+    outline: none;
+}
+
+.checkout-button:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+}
+
+@media only screen and (max-width: 1000px) {
+    .payment-card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-left {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        border-radius: 0;
+    }
+
+    .card-right {
+        width: auto;
+        border-bottom-left-radius: 1.5rem;
+        padding: 0.5rem 3rem 3rem 2rem;
+        border-radius: 0;
+    }
+
+    .small{
+        margin-top: 15px;
+        height: 200px;
+        width: auto;
+        margin-left: 30%;
+    }
+}
+
+
+.bod{
+    /* border: #030303 solid 3px; */
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-title{
+    text-align: center;
+}

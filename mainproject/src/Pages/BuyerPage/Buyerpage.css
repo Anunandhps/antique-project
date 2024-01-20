@@ -1,0 +1,332 @@
+/* Buyerpage.css */
+
+.buyer-page {
+    background-color: #040720;  background-color: #040720;
+    height: 1100px;
+}
+
+.buyer-page .row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.buyer-page .col {
+    flex-basis: 50%;
+    position: relative;
+    left: 100px;
+}
+
+.buyer-page .col h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+.buyer-page .col p {
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.buyer-page .card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    
+    
+}
+
+
+
+.buyer-page .card1 {
+    background-image: url('https://images.pexels.com/photos/15320601/pexels-photo-15320601/free-photo-of-grand-chandelier-inside-a-museum.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.buyer-page .card2 {
+    background-image: url('https://images.pexels.com/photos/2735970/pexels-photo-2735970.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.buyer-page .card3 {
+    background-image: url('https://images.pexels.com/photos/277290/pexels-photo-277290.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.buyer-page .card4 {
+    background-image: url('https://images.pexels.com/photos/8167313/pexels-photo-8167313.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.buyer-page .card:hover {
+    transform: translateY(-10px);
+
+    
+}
+
+.buyer-page h5 {
+    color: coral;
+    text-shadow: 0 0 5px #999;
+}
+
+.buyer-page .card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+
+.buyer-page .footer {
+    padding: 10px 0;
+}
+
+.buyer-page .col2 {
+    width: 25%;
+}
+
+.buyer-page .col2 h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.buyer-page .col2 h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: coral;
+}
+
+.buyer-page .col2 ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.buyer-page .col2 ul li a {
+    color: darkgrey;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.buyer-page .col2 ul li a:hover {
+    color: white;
+    transform: translateX(-12px);
+}
+
+.buyer-page .col2 .socials {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buyer-page .col2 .socials a {
+    height: 40px;
+    width: 40px;
+    background: coral;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.buyer-page .col2 .socials a:hover {
+    transform: scale(1.2);
+    color: coral;
+    background: white;
+}
+
+@media (max-width: 576px) {
+    .buyer-page .col h1 {
+        font-size: 30px;
+    }
+    .buyer-page .row {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 100px;
+    }
+
+    .buyer-page .col {
+        flex-basis: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .buyer-page .card {
+        margin-top: 20px;
+    }
+}
+
+/* Continue from the previous CSS code */
+
+.buyer-page .service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.buyer-page .s-box {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.buyer-page .s-box img {
+    width: 150px;
+}
+
+.buyer-page .s-box h3 {
+    margin: 4px 0 10px;
+    color: coral;
+    font-size: 1.2rem;
+}
+
+.buyer-page .s-box p {
+    line-height: 1.7;
+    color: white;
+}
+
+.buyer-page .cta {
+    background: antiquewhite;
+    padding: 70px 0;
+    text-align: center;
+    width: 66%;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.buyer-page .cta h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+
+.buyer-page .main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buyer-page .footer {
+    padding: 10px 0;
+}
+
+.buyer-page .col2 {
+    width: 25%;
+}
+
+.buyer-page .col2 h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.buyer-page .col2 h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: coral;
+}
+
+.buyer-page .col2 ul li:not(last-child) {
+    margin-bottom: 15px;
+}
+
+.buyer-page .col2 ul li a {
+    color: darkgrey;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.buyer-page .col2 ul li a:hover {
+    color: white;
+    transform: translateX(-12px);
+}
+
+.buyer-page .col2 .socials {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buyer-page .col2 .socials a {
+    height: 40px;
+    width: 40px;
+    background: coral;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.buyer-page .col2 .socials a:hover {
+    transform: scale(1.2);
+    color: coral;
+    background: white;
+}
+
+@media (max-width: 1140px) {
+    .buyer-page section {
+        padding: 50px 8%;
+    }
+
+    .buyer-page .col2 {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    .buyer-page .section {
+        padding: 100px 7%;
+    }
+}
+
+@media (max-width: 575px) {
+    .buyer-page .col2 {
+        width: 100%;
+    }
+
+    .buyer-page .card {
+        position: relative;
+        bottom: 900px;
+    }
+
+     .buyer-page {
+        background-color: #040720;
+        height: 2500px;
+    }
+
+    .buyer-page section {
+        position: relative;
+        top: -700px;
+    }
+}
+
+.buyer-page section {
+    position: relative;
+    bottom: 250px;
+}
+
